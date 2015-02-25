@@ -1,0 +1,12 @@
+{
+  "id": "hawkular-endpoint",
+  "kind": "Service",
+  "apiVersion": "v1beta1",
+  "port": 18080,
+  "containerPort": metrics-endpoint,
+  "labels":{ "name": "hawkular-service"},
+  "selector": {
+    "name": "hawkular-snapshot"
+  },
+  "createExternalLoadBalancer": true
+}

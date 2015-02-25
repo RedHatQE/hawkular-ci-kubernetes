@@ -1,5 +1,5 @@
 {
-  "id": "hawkular-metrics-one",
+  "id": "hawkular-one",
   "kind": "Pod",
   "apiVersion": "v1beta1",
   "desiredState": {
@@ -7,8 +7,8 @@
       "version": "v1beta1",
       "id": "metrics-1",
       "containers": [{
-        "name": "server",
-        "image": "vnguyen/hawkular-metrics:snapshot",
+        "name": "hawkular-snapshot",
+        "image": "vnguyen/hawkular:snapshot",
         "ports": [
           {"name": "metrics-endpoint", "containerPort": 8080}
           ]
@@ -16,6 +16,6 @@
     }
   },
   "labels": {
-    "name": "hawkular-metrics-snapshot"
+    "name": "hawkular-snapshot"
   }
 }
