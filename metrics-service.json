@@ -6,6 +6,6 @@
   "containerPort": metrics-endpoint,
   "labels":{ "name": "hawkular-metrics-service"},
   "selector": {
-    "name": "hawkular-metrics-one"
+    "name": "hawkular-metrics-snapshot"
   }
 }
