@@ -5,10 +5,11 @@
   "desiredState": {
     "manifest": {
       "version": "v1beta1",
-      "id": "metrics-1",
+      "id": "hawkular1",
       "containers": [{
         "name": "hawkular-snapshot",
-        "image": "vnguyen/hawkular:snapshot",
+        "image": "hawkularorg/hawkular:snapshot",
+        "imagePullPolicy": "PullAlways",
         "ports": [
           {"name": "metrics-endpoint", "containerPort": 8080}
           ]
