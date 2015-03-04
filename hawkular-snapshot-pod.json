@@ -8,7 +8,7 @@
       "id": "hawkular1",
       "containers": [{
         "name": "hawkular-snapshot",
-        "image": "hawkularorg/hawkular:snapshot",
+        "image": "hawkularorg/hawkular:latest",
         "imagePullPolicy": "PullAlways",
         "ports": [
           {"name": "metrics-endpoint", "containerPort": 8080}
