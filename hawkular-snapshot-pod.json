@@ -11,9 +11,21 @@
         "image": "hawkular/hawkular:latest",
         "imagePullPolicy": "PullAlways",
         "ports": [
-          {"name": "metrics-endpoint", "containerPort": 8080}
+          {"name": "metrics-endpoint", "containerPort": 8080, "hostPort":8080}
           ]
-        }]
+        },
+	{
+	    "name": "hawkular-test",
+	    "image": "mattmahoneyrh/hawkular-smoke-test",
+	    "imagePullPolicy": "PullAlways",
+	    "env": [{
+		"name": "IP",
+		"value": "http://localhost:8080"
+	    }],
+	    "ports": [{
+	      "name": "hawkular-test-endpoint", "containerPort": 80, "hostPort": 80
+            }]
+	}]
     }
   },
   "labels": {
