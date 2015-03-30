@@ -11,7 +11,7 @@
         "image": "hawkular/hawkular:latest",
         "imagePullPolicy": "PullAlways",
         "ports": [
-          {"name": "metrics-endpoint", "containerPort": 8080, "hostPort":8080}
+          {"name": "metrics-endpoint", "containerPort": 8080}
           ]
         },
 	{
@@ -23,7 +23,7 @@
 		"value": "http://localhost:8080"
 	    }],
 	    "ports": [{
-	      "name": "hawkular-test-endpoint", "containerPort": 80, "hostPort": 80
+	      "name": "hawkular-test-endpoint", "containerPort": 80
             }]
 	}]
     }
