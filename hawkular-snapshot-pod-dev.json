@@ -1,0 +1,22 @@
+{
+  "id": "hawkular-one-dev",
+  "kind": "Pod",
+  "apiVersion": "v1beta1",
+  "desiredState": {
+    "manifest": {
+      "version": "v1beta1",
+      "id": "hawkular1",
+      "containers": [{
+        "name": "hawkular-snapshot-dev",
+        "image": "hawkular/hawkular:latest",
+        "imagePullPolicy": "PullAlways",
+        "ports": [
+          {"name": "metrics-endpoint-dev", "containerPort": 8080}
+          ]
+        }]
+    }
+  },
+  "labels": {
+    "name": "hawkular-snapshot-dev"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "hawkular-endpoint-dev",
+  "kind": "Service",
+  "apiVersion": "v1beta1",
+  "port": 18090,
+  "containerPort": metrics-endpoint-dev,
+  "labels":{ "name": "hawkular-service-dev"},
+  "selector": {
+    "name": "hawkular-snapshot-dev"
+  },
+  "publicIPs": [172.18.17.18,172.18.17.19] 
+}
