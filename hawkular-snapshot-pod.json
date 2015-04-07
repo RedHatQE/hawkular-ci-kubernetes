@@ -20,7 +20,9 @@
 	    "imagePullPolicy": "PullAlways",
 	    "env": [{
 		"name": "IP",
-		"value": "http://localhost:8080"
+		"value": "http://localhost:8080",
+		"name": "AUTH_KEY",
+                "value": "AUTH_KEY_VALUE"
 	    }],
 	    "ports": [{
 	      "name": "hawkular-test-endpoint", "containerPort": 80
