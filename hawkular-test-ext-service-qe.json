@@ -1,0 +1,12 @@
+{
+  "id": "hawkular-test-qe",
+  "kind": "Service",
+  "apiVersion": "v1beta1",
+  "port": 28085,
+  "containerPort": hawkular-test-endpoint-qe,
+  "labels":{ "name": "hawkular-test-service-qe"},
+  "selector": {
+    "name": "hawkular-snapshot-qe"
+  },
+  "publicIPs": [172.18.17.18, 172.18.17.19] 
+}
