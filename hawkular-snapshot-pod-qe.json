@@ -13,6 +13,21 @@
         "ports": [
           {"name": "metrics-endpoint-qe", "containerPort": 8080}
           ]
+        },
+        {
+            "name": "hawkular-test-qe",
+            "image": "mattmahoneyrh/hawkular-smoke-test",
+            "imagePullPolicy": "PullAlways",
+            "env": [{
+                "name": "IP",
+                "value": "http://localhost:8080"
+             }, {
+                "name": "AUTH_KEY",
+                "value": "AUTH_KEY_VALUE"
+             }],
+            "ports": [{
+              "name": "hawkular-test-endpoint-qe", "containerPort": 80
+            }]
         }]
     }
   },
