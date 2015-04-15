@@ -8,5 +8,5 @@
   "selector": {
     "name": "hawkular-snapshot-dev"
   },
-  "publicIPs": [172.18.17.18,172.18.17.19] 
+  "publicIPs": [172.18.17.18] 
 }
