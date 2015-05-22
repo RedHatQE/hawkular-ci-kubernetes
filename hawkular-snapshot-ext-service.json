@@ -3,10 +3,10 @@
   "kind": "Service",
   "apiVersion": "v1beta1",
   "port": 18080,
-  "containerPort": metrics-endpoint,
+  "containerPort": "metrics-endpoint",
   "labels":{ "name": "hawkular-service"},
   "selector": {
     "name": "hawkular-snapshot"
   },
-  "publicIPs": ["172.18.17.18"] 
+  "publicIPs": ["172.18.17.27"] 
 }
